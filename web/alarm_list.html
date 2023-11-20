@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script type="text/javascript" src="./assets/js/lib/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./assets/js/common.js"></script>
+	<title>설정된 알람</title>
+</head>
+<body>
+	<!-- #WRAP -->
+	<div id="wrap">
+		<!-- #LNB -->
+		<nav class="lnb">
+			<h1>
+				<a href="home.html">
+					<img src="assets/images/logo.png" alt="">
+					<!-- <img src="assets/images/JSRO.jpg" alt=""> -->
+					<!-- <img src="assets/images/JSTECH.jpg" alt=""> -->
+				</a>
+			</h1>
+			<ul class="depth_01">
+				<li>
+					<a href="#">홈</a>
+					<ul class="depth_02">
+						<li><a href="home.html">홈 설정</a></li>
+						<li><a href="view_table.html">표 보기</a></li>
+						<li><a href="view_graph.html">그래프 보기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">조회</a>
+					<ul class="depth_02">
+						<li><a href="search_table.html">표 조회</a></li>
+						<li><a href="search_graph.html">그래프 조회</a></li>
+					</ul>
+				</li>
+				<li class="on">
+					<a href="#">알람</a>
+					<ul class="depth_02">
+						<li class="on"><a href="alarm_list.html">설정된 알람</a></li>
+						<li><a href="alarm_list_01.html">발생한 알람</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">제어</a>
+					<ul class="depth_02">
+						<li><a href="switch_list.html">Switch 제어</a></li>
+						<li><a href="command_list.html">Command 제어</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">기타</a>
+					<ul class="depth_02">
+						<li><a href="#">알림 수신 변경</a></li>
+						<li><a href="group_list.html">그룹 관리</a></li>
+						<li><a href="#">레포팅</a></li>
+						<li><a href="#">데이터 분석</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- 2023-11-06 추가 -->
+			<div class="log_btn">
+				<a href="login.html" class="logout"><span>Logout</span></a>
+			</div>
+			<!--// 2023-11-06 추가 -->
+		</nav>
+		<!--// #LNB -->
+
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- #header -->
+			<header id="header">
+				<div class="inner">
+					<div class="log_btn">
+						<a href="pwd_set.html" class="lock"><span class="blind">LOCK</span></a>
+						<a href="login.html" class="logout"><span>Logout</span></a>
+					</div>
+					<div class="mo_wrap">
+						<h1>
+							<a href="home.html">
+								<img src="assets/images/logo.png" alt="">
+								<!-- <img src="assets/images/JSRO.jpg" alt=""> -->
+								<!-- <img src="assets/images/JSTECH.jpg" alt=""> -->
+							</a>
+						</h1>
+						<button class="site_btn"></button>
+					</div>
+				</div>
+			</header>
+			<!-- // #header -->
+
+			<!-- Content -->
+			<div class="content">
+				<div class="tit_area">
+					<h2>설정된 알람</h2>
+					<div class="btn_wrap">
+						<a href="alarm_set.html" class="btn btn_add"><span>알람 추가</span></a>
+					</div>
+				</div>
+				<div class="bd_wrap">
+					<div class="table_wrap of_x">
+						<table class="form_table tb_type1">
+							<caption class="blind">설정된 알람</caption>
+							<colgroup>
+								<col style="width: 7%">
+								<col>
+								<col style="width: 13%">
+								<col style="width: 15%">
+								<col style="width: 21%">
+								<col style="width: 8%">
+								<col style="width: 14%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">순서</th>
+									<th scope="col">UPA 이름</th>
+									<th scope="col">데이터 이름</th>
+									<th scope="col">설정 범위</th>
+									<th scope="col">등록 일시</th>
+									<th scope="col" colspan="2">활성화</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>5</td>
+									<td>9995-2-2</td>
+									<td>습도1</td>
+									<td>12 이상 ~ 14 이하</td>
+									<td>2023-09-19 10:33:10</td>
+									<td>
+										<div class="btn_switch">
+											<label for="">
+												<input type="checkbox" checked>
+											</label>
+										</div>
+									</td>
+									<td>
+										<div class="btn_wrap">
+											<button type="button" class="btn btn_del">삭제</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>9995-2-2</td>
+									<td>미세먼지 10</td>
+									<td>50 이상</td>
+									<td>2023-09-19 10:33:10</td>
+									<td>
+										<div class="btn_switch">
+											<label for="">
+												<input type="checkbox">
+											</label>
+										</div>
+									</td>
+									<td>
+										<div class="btn_wrap">
+											<button type="button" class="btn btn_del">삭제</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>9995-2-2</td>
+									<td>ANA-1111</td>
+									<td>11 이상 ~ 12 이하</td>
+									<td>2023-09-19 10:33:10</td>
+									<td>
+										<div class="btn_switch">
+											<label for="">
+												<input type="checkbox">
+											</label>
+										</div>
+									</td>
+									<td>
+										<div class="btn_wrap">
+											<button type="button" class="btn btn_del">삭제</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>3217-32-2</td>
+									<td>온도</td>
+									<td>15 이상</td>
+									<td>2023-09-19 10:33:10</td>
+									<td>
+										<div class="btn_switch">
+											<label for="">
+												<input type="checkbox">
+											</label>
+										</div>
+									</td>
+									<td>
+										<div class="btn_wrap">
+											<button type="button" class="btn btn_del">삭제</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>2307-25-511</td>
+									<td>현재온도</td>
+									<td>1 이상 ~ 2 이하</td>
+									<td>2023-09-19 10:33:10</td>
+									<td>
+										<div class="btn_switch">
+											<label for="">
+												<input type="checkbox">
+											</label>
+										</div>
+									</td>
+									<td>
+										<div class="btn_wrap">
+											<button type="button" class="btn btn_del">삭제</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!--// Content -->
+		</div>
+		<!-- // #CONTENTS -->
+	</div>
+	<!-- // WRAP -->
+</body>
+</html>

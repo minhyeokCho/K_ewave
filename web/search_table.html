@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script type="text/javascript" src="./assets/js/lib/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./assets/js/common.js"></script>
+	<title>표 조회</title>
+</head>
+<body>
+	<!-- #WRAP -->
+	<div id="wrap">
+		<!-- #LNB -->
+		<nav class="lnb">
+			<h1>
+				<a href="home.html">
+					<img src="assets/images/logo.png" alt="">
+					<!-- <img src="assets/images/JSRO.jpg" alt=""> -->
+					<!-- <img src="assets/images/JSTECH.jpg" alt=""> -->
+				</a>
+			</h1>
+			<ul class="depth_01">
+				<li>
+					<a href="#">홈</a>
+					<ul class="depth_02">
+						<li><a href="home.html">홈 설정</a></li>
+						<li><a href="view_table.html">표 보기</a></li>
+						<li><a href="view_graph.html">그래프 보기</a></li>
+					</ul>
+				</li>
+				<li class="on">
+					<a href="#">조회</a>
+					<ul class="depth_02">
+						<li class="on"><a href="search_table.html">표 조회</a></li>
+						<li><a href="search_graph.html">그래프 조회</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">알람</a>
+					<ul class="depth_02">
+						<li><a href="alarm_list.html">설정된 알람</a></li>
+						<li><a href="alarm_list_01.html">발생한 알람</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">제어</a>
+					<ul class="depth_02">
+						<li><a href="switch_list.html">Switch 제어</a></li>
+						<li><a href="command_list.html">Command 제어</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">기타</a>
+					<ul class="depth_02">
+						<li><a href="#">알림 수신 변경</a></li>
+						<li><a href="group_list.html">그룹 관리</a></li>
+						<li><a href="#">레포팅</a></li>
+						<li><a href="#">데이터 분석</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- 2023-11-06 추가 -->
+			<div class="log_btn">
+				<a href="login.html" class="logout"><span>Logout</span></a>
+			</div>
+			<!--// 2023-11-06 추가 -->
+		</nav>
+		<!--// #LNB -->
+
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- #header -->
+			<header id="header">
+				<div class="inner">
+					<div class="log_btn">
+						<a href="pwd_set.html" class="lock"><span class="blind">LOCK</span></a>
+						<a href="login.html" class="logout"><span>Logout</span></a>
+					</div>
+					<div class="mo_wrap">
+						<h1>
+							<a href="home.html">
+								<img src="assets/images/logo.png" alt="">
+								<!-- <img src="assets/images/JSRO.jpg" alt=""> -->
+								<!-- <img src="assets/images/JSTECH.jpg" alt=""> -->
+							</a>
+						</h1>
+						<button class="site_btn"></button>
+					</div>
+				</div>
+			</header>
+			<!-- // #header -->
+
+			<!-- Content -->
+			<div class="content">
+				<div class="tit_area">
+					<h2>표 조회</h2>
+				</div>
+
+				<div class="tb_search">
+					<div class="search_wrap">
+						<div class="form_conbox">
+							<div class="item">
+								<div class="form_tit">장치</div>
+								<div class="form_select">
+									<select>
+										<option value="">9995-2-2</option>
+										<option value="">습도1</option>
+									</select>
+								</div>
+							</div>
+							<div class="item">
+								<div class="form_tit">기간</div>
+								<div class="form_input">
+									<input type="text" class="inpt_txt" value="2023-09-28 - 2023-10-03">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btn_wrap">
+						<a href="#" class="btn sub_btn btn_search"><span>조회</span></a>
+						<a href="#" class="btn main_btn btn_down"><span>엑셀 다운로드</span></a>
+					</div>
+				</div>
+
+				<div class="bd_wrap">
+					<div class="table_wrap of_x">
+						<table class="form_table tb_type2">
+							<caption class="blind">설정된 알람</caption>
+							<colgroup>
+								<col style="width: 7%">
+								<col style="width: 15%">
+								<col style="width: 9%">
+								<col style="width: 9%">
+								<col style="width: 12%">
+								<col style="width: 12%">
+								<col style="width: 12%">
+								<col style="width: 12%">
+								<col style="width: 12%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th scope="col">날짜 시간</th>
+									<th scope="col">온도1</th>
+									<th scope="col">습도1</th>
+									<th scope="col">이산화탄소</th>
+									<th scope="col">미세먼지 0.1</th>
+									<th scope="col">미세먼지 2.5</th>
+									<th scope="col">미세먼지 10</th>
+									<th scope="col">조도</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>01</td>
+									<td>2023-09-28 00:00:00</td>
+									<td>28.2</td>
+									<td>56.4</td>
+									<td>410</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>2023-09-28 00:00:00</td>
+									<td>28.2</td>
+									<td>56.4</td>
+									<td>410</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>03</td>
+									<td>2023-09-28 00:00:00</td>
+									<td>28.2</td>
+									<td>56.4</td>
+									<td>410</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>04</td>
+									<td>2023-09-28 00:00:00</td>
+									<td>28.2</td>
+									<td>56.4</td>
+									<td>410</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>05</td>
+									<td>2023-09-28 00:00:00</td>
+									<td>28.2</td>
+									<td>56.4</td>
+									<td>410</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>06</td>
+									<td>2023-09-28 00:00:00</td>
+									<td>28.2</td>
+									<td>56.4</td>
+									<td>410</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>07</td>
+									<td>2023-09-28 00:00:00</td>
+									<td>28.2</td>
+									<td>56.4</td>
+									<td>410</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>08</td>
+									<td>2023-09-28 00:00:00</td>
+									<td>28.2</td>
+									<td>56.4</td>
+									<td>410</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>09</td>
+									<td>2023-09-28 00:00:00</td>
+									<td>28.2</td>
+									<td>56.4</td>
+									<td>410</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>2023-09-28 00:00:00</td>
+									<td>28.2</td>
+									<td>56.4</td>
+									<td>410</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>2023-09-28 00:00:00</td>
+									<td>28.2</td>
+									<td>56.4</td>
+									<td>410</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!--// Content -->
+		</div>
+		<!-- // #CONTENTS -->
+	</div>
+	<!-- // WRAP -->
+</body>
+</html>

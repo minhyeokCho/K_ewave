@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script type="text/javascript" src="./assets/js/lib/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./assets/js/common.js"></script>
+	<title>홈</title>
+</head>
+<body>
+	<!-- #WRAP -->
+	<div id="wrap">
+		<!-- #LNB -->
+		<nav class="lnb">
+			<h1>
+				<a href="home.html">
+					<img src="assets/images/logo.png" alt="">
+					<!-- <img src="assets/images/JSRO.jpg" alt=""> -->
+					<!-- <img src="assets/images/JSTECH.jpg" alt=""> -->
+				</a>
+			</h1>
+			<ul class="depth_01">
+				<li class="on">
+					<a href="#">홈</a>
+					<ul class="depth_02">
+						<li class="on"><a href="home.html">홈 설정</a></li>
+						<li><a href="view_table.html">표 보기</a></li>
+						<li><a href="view_graph.html">그래프 보기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">조회</a>
+					<ul class="depth_02">
+						<li><a href="search_table.html">표 조회</a></li>
+						<li><a href="search_graph.html">그래프 조회</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">알람</a>
+					<ul class="depth_02">
+						<li><a href="alarm_list.html">설정된 알람</a></li>
+						<li><a href="alarm_list_01.html">발생한 알람</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">제어</a>
+					<ul class="depth_02">
+						<li><a href="switch_list.html">Switch 제어</a></li>
+						<li><a href="command_list.html">Command 제어</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">기타</a>
+					<ul class="depth_02">
+						<li><a href="#">알림 수신 변경</a></li>
+						<li><a href="group_list.html">그룹 관리</a></li>
+						<li><a href="#">레포팅</a></li>
+						<li><a href="#">데이터 분석</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<!-- 2023-11-06 추가 -->
+			<div class="log_btn">
+				<a href="login.html" class="logout"><span>Logout</span></a>
+			</div>
+			<!--// 2023-11-06 추가 -->
+		</nav>
+		<!--// #LNB -->
+
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- #header -->
+			<header id="header">
+				<div class="inner">
+					<div class="log_btn">
+						<a href="pwd_set.html" class="lock"><span class="blind">LOCK</span></a>
+						<a href="login.html" class="logout"><span>Logout</span></a>
+					</div>
+					<div class="mo_wrap">
+						<h1>
+							<a href="home.html">
+								<img src="assets/images/logo.png" alt="">
+								<!-- <img src="assets/images/JSRO.jpg" alt=""> -->
+								<!-- <img src="assets/images/JSTECH.jpg" alt=""> -->
+							</a>
+						</h1>
+						<button class="site_btn"></button>
+					</div>
+				</div>
+			</header>
+			<!-- // #header -->
+
+			<!-- Content -->
+			<div class="content">
+				<!-- 2023-11-17 추가 -->
+				<div class="tit_area">
+					<h2>우리 농장</h2>
+				</div>
+				<!--// 2023-11-17 추가 -->
+
+				<!-- 장치 목록 -->
+				<div class="dvc_wrap">
+					<div class="item">
+						<div class="tit_wrap">
+							<p class="name">S/N 2305-22-1 장치</p>
+							<a href="#" class="set_pop" open-pop="dev_pop"><span class="blind">설정</span></a>
+						</div>
+
+						<div class="state_li">
+							<ul>
+								<li>
+									<span>온도</span>
+									<strong><em>30.7</em> <em>°</em></strong>
+								</li>
+							</ul>
+						</div>
+
+						<div class="state_msg">
+							<p>정상 운영 중</p>
+						</div>
+
+						<div class="date_wrap">
+							<p class="txt">Last update</p>
+							<p class="date">09/02 18:33</p>
+						</div>
+
+						<div class="btn_wrap btn_100">
+							<a href="view_table.html" class="btn main_btn">표 보기</a>
+							<a href="view_graph.html" class="btn sub_btn">그래프 보기</a>
+						</div>
+					</div>
+					<div class="item warning"><!-- 경보 발생 중 class="warning" 추가 -->
+						<div class="tit_wrap">
+							<p class="name">S/N 2305-22-1 장치</p>
+							<a href="#" class="set_pop" open-pop="dev_pop"><span class="blind">설정</span></a>
+						</div>
+
+						<div class="state_li">
+							<ul>
+								<li class="warning"><!-- 경보 발생 중 class="warning" 추가 -->
+									<span>온도</span>
+									<strong><em>30.7</em> <em>°</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+								<li>
+									<span>미세먼지 10</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+								<li>
+									<span>미세먼지 2.5</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+								<li>
+									<span>이산화탄소</span>
+									<strong><em>99.9</em> <em>%</em></strong>
+								</li>
+							</ul>
+						</div>
+
+						<div class="state_msg">
+							<p>경보 발생 중</p>
+						</div>
+
+						<div class="date_wrap">
+							<p class="txt">Last update</p>
+							<p class="date">09/02 18:33</p>
+						</div>
+
+						<div class="btn_wrap btn_100">
+							<a href="view_table.html" class="btn main_btn">표 보기</a>
+							<a href="view_graph.html" class="btn sub_btn">그래프 보기</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="tit_wrap">
+							<p class="name">S/N 2305-22-1 장치</p>
+							<a href="#" class="set_pop" open-pop="dev_pop"><span class="blind">설정</span></a>
+						</div>
+
+						<div class="state_li">
+							<ul>
+								<li>
+									<span>온도</span>
+									<strong><em>30.7</em> <em>°</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+							</ul>
+						</div>
+
+						<div class="state_msg">
+							<p>정상 운영 중</p>
+						</div>
+
+						<div class="date_wrap">
+							<p class="txt">Last update</p>
+							<p class="date">09/02 18:33</p>
+						</div>
+
+						<div class="btn_wrap btn_100">
+							<a href="view_table.html" class="btn main_btn">표 보기</a>
+							<a href="view_graph.html" class="btn sub_btn">그래프 보기</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="tit_wrap">
+							<p class="name">S/N 2305-22-1 장치</p>
+							<a href="#" class="set_pop" open-pop="dev_pop"><span class="blind">설정</span></a>
+						</div>
+
+						<div class="state_li">
+							<ul>
+								<li>
+									<span>온도</span>
+									<strong><em>30.7</em> <em>°</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+							</ul>
+						</div>
+
+						<div class="state_msg">
+							<p>정상 운영 중</p>
+						</div>
+
+						<div class="date_wrap">
+							<p class="txt">Last update</p>
+							<p class="date">09/02 18:33</p>
+						</div>
+
+						<div class="btn_wrap btn_100">
+							<a href="view_table.html" class="btn main_btn">표 보기</a>
+							<a href="view_graph.html" class="btn sub_btn">그래프 보기</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="tit_wrap">
+							<p class="name">S/N 2305-22-1 장치</p>
+							<a href="#" class="set_pop" open-pop="dev_pop"><span class="blind">설정</span></a>
+						</div>
+
+						<div class="state_li">
+							<ul>
+								<li>
+									<span>온도</span>
+									<strong><em>30.7</em> <em>°</em></strong>
+								</li>
+								<li>
+									<span>습도</span>
+									<strong><em>53.1</em> <em>%</em></strong>
+								</li>
+							</ul>
+						</div>
+
+						<div class="state_msg">
+							<p>정상 운영 중</p>
+						</div>
+
+						<div class="date_wrap">
+							<p class="txt">Last update</p>
+							<p class="date">09/02 18:33</p>
+						</div>
+
+						<div class="btn_wrap btn_100">
+							<a href="view_table.html" class="btn main_btn">표 보기</a>
+							<a href="view_graph.html" class="btn sub_btn">그래프 보기</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="tit_wrap">
+							<p class="name">S/N 2305-22-1 장치</p>
+							<a href="#" class="set_pop" open-pop="dev_pop"><span class="blind">설정</span></a>
+						</div>
+
+						<div class="state_li">
+							<ul>
+								<li>
+									<span>온도</span>
+									<strong><em>30.7</em> <em>°</em></strong>
+								</li>
+							</ul>
+						</div>
+
+						<div class="state_msg">
+							<p>정상 운영 중</p>
+						</div>
+
+						<div class="date_wrap">
+							<p class="txt">Last update</p>
+							<p class="date">09/02 18:33</p>
+						</div>
+
+						<div class="btn_wrap btn_100">
+							<a href="view_table.html" class="btn main_btn">표 보기</a>
+							<a href="view_graph.html" class="btn sub_btn">그래프 보기</a>
+						</div>
+					</div>
+				</div>
+				<!--// 장치 목록 -->
+			</div>
+			<!--// Content -->
+		</div>
+		<!-- // #CONTENTS -->
+	</div>
+	<!-- // WRAP -->
+
+<!-- 장치세팅팝업 -->
+<section class="popup dev_pop">
+	<div class="inner">
+		<div class="pop_wrap">
+			<button class="btn_close"><span class="blind">닫기</span></button>
+			<div class="cont">
+				<h3 class="pop_tit">장치 이름</h3>
+				<input type="text" class="inpt_txt" value="1동 건물 미니기상대2307-2-2">
+			</div>
+			<div class="cont">
+				<h3 class="pop_tit">Data</h3>
+				<div class="data_list">
+					<table>
+						<colgroup>
+							<col width="20%">
+							<col width="50%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>사용유무</th>
+								<th class="tl">이름</th>
+								<th class="tl">단위</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" name="data" checked>
+								</td>
+								<td>
+									<input type="text" class="inpt_txt" value="온도">
+								</td>
+								<td>
+									<select>
+										<option>°C</option>
+										<option>%</option>
+										<option>%</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" name="data" checked>
+								</td>
+								<td>
+									<input type="text" class="inpt_txt" value="습도">
+								</td>
+								<td>
+									<select>
+										<option>%</option>
+										<option>°C</option>
+										<option>%</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" name="data" checked>
+								</td>
+								<td>
+									<input type="text" class="inpt_txt" value="이산화탄소">
+								</td>
+								<td>
+									<select>
+										<option>°C</option>
+										<option>%</option>
+										<option>%</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" name="data">
+								</td>
+								<td>
+									<input type="text" class="inpt_txt" value="미세먼지 0.1">
+								</td>
+								<td>
+									<select>
+										<option>°C</option>
+										<option>%</option>
+										<option>%</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" name="data">
+								</td>
+								<td>
+									<input type="text" class="inpt_txt" value="미세먼지 10">
+								</td>
+								<td>
+									<select>
+										<option>°C</option>
+										<option>%</option>
+										<option>%</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" name="data">
+								</td>
+								<td>
+									<input type="text" class="inpt_txt" value="미세먼지 2.5">
+								</td>
+								<td>
+									<select>
+										<option>°C</option>
+										<option>%</option>
+										<option>%</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn_wrap">
+					<a href="#" class="btn main_btn">수정</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--// 장치세팅팝업 -->
+</body>
+</html>
